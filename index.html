@@ -4,9 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kenneth Ulloa</title>
+    <script src="https://kit.fontawesome.com/f9e2e8e2a6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/lib.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-    
+<body class="bg-darker">
+    <header class="bg-dark p-2 top-float rounded-2 flex-row ai-center gap-2">
+        <ul class="horizontal-list">
+            <li><a href="#inicio">Sobre mí</a></li>|
+            <li><a href="#proyectos">Mis proyectos</a></li>|
+            <li><a href="#habilidades">Habilidades</a></li>
+        </ul>
+        <i class="fa-solid fa-bars f"></i>
+    </header>
+    <div id="inicio" class="full-page flex-column jc-center">
+        <h1 class="br dashed br-bottom br-top text-light p-4 f-w br-color-light ">## Sobre mí</h1>
+        <div class="flex-row ai-center px-5 px-lg mt-5">
+            <img src="img/kenneth2.jpg" alt="Foto de Kenneth" class="poster grayscale">
+            <div class="bg-darker p-5 h-100 jc-center flex-column">
+                <p>>></p>
+                <p>Hola, me llamo</p>
+                <h1 class="">Kenneth Ulloa</h1>
+                <p class="cursor-target">
+                    Tengo 22 años. Soy un estudiante de ingeniería de software en la <a href="https://www.epn.edu.ec" class="text-hover-primary">Escuela Politécnica Nacional</a> en Quito, Ecuador.
+                    Me encanta aprender nuevas cosas, siempre estoy investigando nuevas formas de crear y mejorar mis habilidades. 
+                    Tengo especial interés en el desarrollo Web y el diseño UI. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="proyectos" class="full-page flex-column jc-center">
+        <h1 class="br dashed br-bottom br-top text-light p-4 br-color-light f-w">## Proyectos destacados</h1>
+        <div class="p-all ai-center flex-row gap-5">
+            <div class="flex-column ai-center jc-center">
+                <span class="cursor-target animated jc-center">
+                    <h2 class="content">Lunnaris Web Components</h2>
+                    <span class="caret"></span>
+                </span>
+                <img src="img/lunnaris-web.png" alt="Captura Lunnaris Video" class="capture bg-darker m-2"/>
+                <a href="https://github.com/KennethUlloa/lunnaris-web-components" class="bg-body p-3 rounded-1 undecorated bg-hover-primary text-hover-dark f-w soft-transition-all">
+                    Ver en GitHub</a>
+                <p class="bg-darker p-2">
+                    >> Componentes creados enteramente en Javascrpit y CSS para proveer un mejor aspecto, así como 
+                    funcionalidad personalizable a los elementos que vienen por defecto en el navegador.
+                </p>
+                
+            </div>
+            <span class="v-separator h-100 br br-left dotted"></span>
+            <div class="flex-column ai-center jc-center">
+                <span class="cursor-target animated jc-center">
+                    <h2 class="content">XMLSwing</h2>
+                    <span class="caret"></span>
+                </span>
+                <img src="img/xmlswing.png" alt="Captura XMLSwing" class="capture bg-darker m-2">
+                <a href="https://github.com/KennethUlloa/XMLSwing" class="bg-body p-3 rounded-1 undecorated bg-hover-primary text-hover-dark f-w soft-transition-all">
+                    Ver en GitHub</a>
+                <p class="bg-darker p-2">
+                    >>
+                    Librería escrita en Java para crear mock ups funcionales para interfaces gráficas utilizando 
+                    la api de Swing y archivos XML para definir la estructura de la interfaz.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="habilidades" class="full-page flex-column ai-center jc-center bg-darker">
+        <div class="circle flex-column ai-center jc-center dotted" id="skills-pane">
+            <span class="cursor-target animated w-fit jc-center">
+                <h2 class="content w-fit bg-darker">Mis habilidades</h2>
+                <span class="caret"></span>
+            </span>
+        </div>
+    </div>
+    <aside class="bg-dark bottom-float rounded-1 on-top">
+        <div class="text-light p-2 popup-target focus text-hover-primary all">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="popup left nowrap p-1 top-0 h-100 on-top bg-darker">
+                <a href="mailto:ulloakenth@gmail.com">ulloakenth@gmail.com</a>
+            </div>
+        </div>
+        <div class="text-light p-2 popup-target focus text-hover-primary all">
+            <i class="fa-brands fa-instagram"></i>
+            <div class="popup left nowrap p-1 top-0 h-100 bg-darker">
+                <a href="https://www.instagram.com/l.e.o.n.a.r.d.o_k.e.n.t.h/" >@l.e.o.n.a.r.d.o_k.e.n.t.h</a>
+            </div>
+        </div>
+        <div class="text-light p-2 popup-target focus text-hover-primary all">
+            <i class="fa-brands fa-github "></i>
+            <div class="popup left nowrap p-1 top-0 h-100 bg-darker">
+                <a href="https://github.com/KennethUlloa/" >KennethUlloa</a>
+            </div>
+        </div>
+    </aside>
+    <script src="js/index.js"></script>
 </body>
 </html>
