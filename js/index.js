@@ -44,9 +44,11 @@ function toRadians(angle) {
 
 function SkillCard(skill) {
     var div = document.createElement('div');
-    div.className = "elemento-circular popup-target"
+    div.className = "ps-abs flex-column skill-el"
     div.innerHTML = `
+    <div class="elemento-circular popup-target">
     <img src="${skill.img}" alt="${skill.alt}" class="icono">
+    </div>
     <div class="bg-darker p-2 popup right">
     <h4>${skill.name}</h4>
     ${skill.desc}</div>
