@@ -273,14 +273,16 @@
     }
 
     .circle {
+        padding-top: 20px;
         width: 300px;
         min-height: 100vh;
         height: fit-content;
-        border: 1px solid red;
+        border: none;
         animation: none;
         border-radius: 0;
         gap: 10px;
         padding: 0;
+        margin-bottom: 10px;
     }
 
     .skill-el {
