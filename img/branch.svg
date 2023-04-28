@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 48 48"
+   version="1.1"
+   id="svg1139"
+   sodipodi:docname="branch.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <style
+     id="style4122">.filled {  }
+</style>
+  <defs
+     id="defs1143" />
+  <sodipodi:namedview
+     id="namedview1141"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="1.005"
+     inkscape:cx="238.30846"
+     inkscape:cy="400.49751"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1139" />
+  <title
+     id="title1130">branch</title>
+  <path
+     d="m 44,9 a 7,7 0 1 0 -9,6.7 V 16 a 6,6 0 0 1 -6,6 h -8 a 10.3,10.3 0 0 0 -6,2 v -8.3 a 7,7 0 1 0 -4,0 v 16.6 a 7,7 0 1 0 4,0 V 32 a 6,6 0 0 1 6,-6 h 8 A 10,10 0 0 0 39,16 V 15.7 A 7,7 0 0 0 44,9 Z M 10,9 a 3,3 0 0 1 6,0 3,3 0 0 1 -6,0 z m 6,30 a 3,3 0 1 1 -3,-3 2.9,2.9 0 0 1 3,3 z M 37,12 a 2.9,2.9 0 0 1 -3,-3 3,3 0 0 1 6,0 2.9,2.9 0 0 1 -3,3 z"
+     id="path1135"
+     style="display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-opacity:1"
+     class="filled" />
+</svg>

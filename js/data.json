@@ -1,0 +1,48 @@
+{
+    "name": "Kenneth Ulloa",
+    "age": 22,
+    "skills": [
+        {
+            "name": "Desarrollo Web",
+            "description": "Desarrollo de aplicaciones web usando Java (Jakarta) Python (Flask)",
+            "img":"img/web.svg"
+        },
+        {
+            "name": "Desarrollo de escritorio",
+            "description": "Desarrollo de aplicaciones de escritorio con Java (Swing, JavaFX), Python (PyQT5), Javascript (Electron)",
+            "img": "img/pc.svg"
+        },
+        {
+            "name": "Persistencia",
+            "description": "Bases de datos relacionales (MySQL, SQLite, JPA), no relacionales (MongoDB)",
+            "img": "img/database.svg"
+        },
+        {
+            "name": "Sistema de versiones",
+            "description": "Uso de git y repositorios remotos en GitHub",
+            "img": "img/branch.svg"
+        }
+    ],
+    "portfolio": [
+        {
+            "name": "Lunnaris Web Components",
+            "description": "Componentes creados enteramente en Javascrpit y CSS para proveer un mejor aspecto, así como funcionalidad personalizable a los elementos que vienen por defecto en el navegador.",
+            "url": "https://github.com/KennethUlloa/lunnaris-web-components"
+        },
+        {
+            "name": "XMLSwing",
+            "description": "Librería escrita en Java para crear mock ups funcionales para interfaces gráficas utilizando la api de Swing y archivos XML para definir la estructura de la interfaz.",
+            "url": "https://github.com/KennethUlloa/XMLSwing"
+        },
+        {
+            "name": "Lunnaris Lib",
+            "description": "Librería de CSS y JS con base en Typescript y SASS",
+            "url": "https://github.com/KennethUlloa/lunnaris-web-lib"
+        },
+        {
+            "name": "JRunner",
+            "description": "Launcher para java escrito en python, permite utilizar archivos JSON para configurar el arranque de un programa en java. Permite quemar argumentos de ejecución, ruta del JRE, y log",
+            "url": "https://github.com/KennethUlloa/jrunner"
+        }
+    ]
+}

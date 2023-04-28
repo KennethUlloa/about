@@ -1,0 +1,23 @@
+:root {
+    --image-size: 500px;
+    --bg-body: rgb(49, 51, 54);
+    --bg-body-dark: rgb(35, 40, 42);
+    --bg-body-darker: rgb(16, 17, 18);
+    --bg-body-light: rgb(84, 88, 93);
+    --text-color: rgb(226, 227, 222);
+    --bg-primary: rgb(82, 198, 241);
+    --border-width-main: 5px;
+    --circle-element: 80px;
+}
+
+.bg-body {background: var(--bg-body);}
+.bg-dark {background: var(--bg-body-dark);}
+.bg-darker {background: var(--bg-body-darker);}
+.bg-text {background: var(--text-color);}
+.text-light {color: var(--bg-body-light);}
+.bg-primary {background-color: var(--bg-primary);}
+
+.bg-hover-primary:hover  {background-color: var(--bg-primary);} 
+.text-hover-dark:hover {color: var(--bg-body-dark)}
+.text-hover-primary:hover, .text-hover-primary.all:hover * {color: var(--bg-primary)}
+

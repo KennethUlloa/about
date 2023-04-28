@@ -1,60 +1,59 @@
-const java = {name:"Java", img:"img/java.png", alt:"Logo de Java", desc:"MVC con Java EE, Swing, JavaFX, Maven, JPA"};
-const python = {name:"Python", img:"img/python.png", alt:"Logo de Python", desc:"Desarrollo web con flask, UI con PyQT5"};
-const javascript = {name:"Javascript", img:"img/javascript.png", alt:"Logo de Javascript", desc:"JS asíncrono, manejo del DOM, API Fetch, Módulos"};
-const html = {name:"HTML", img:"img/html.png", alt:"Logo de HTML", desc:"Estructura base, componentes a base de elementos"};
-const css = {name:"CSS", img:"img/css.png", alt:"Logo de CSS", desc:"Posición, animaciones, manejo de grid y flex, bootstrap"};
-const mysql = {name:"MySQL", img:"img/mysql.png", alt:"Logo de MySQL", desc:"CRUD, triggers, store procedures"};
-const mongo = {name:"MongoDB", img:"img/mongo.png", alt:"Logo de MongoDB", desc:"Pipelines, filters"};
-const git = {name:"Git", img:"img/git.png", alt:"Logo de Git", desc:"Commit, pull, clone, push, merge"};
-
-const skillsList = [java, python, javascript, html, css, mysql, mongo, git];
-
-let num = skillsList.length;
-const angleOffset = 360/num;
-
-//let circles = document.querySelector("#habilidades").querySelectorAll(".elemento-circular");
-
-let skillsPane = document.querySelector("#skills-pane");
-
-skillsList.forEach((skill, i) => {
-    var p = position(i);
-    var pane = SkillCard(skill);
-    pane.style.left = `${p.x*100}%`
-    pane.style.top = `${p.y*100}%`
-    skillsPane.appendChild(pane);
+fetch("js/data.json",{
+    headers: {
+        'Content-Type': 'application/json'
+    }
+}).then(response => response.json())
+.then(data => {
+    let container = document.querySelector("#skills-container");
+    container.innerHTML = "";
+    let slider_ = document.querySelector("#slider");
+    slider_.innerHTML = "";
+    data.portfolio.forEach(p => {
+        slider_.innerHTML += createSlide(p);
+    })
+    data.skills.forEach(skill => {
+        createCard(skill, container)
+    });
 })
 
-/*
-circles.forEach((c,i) => {
-    var p = position(i);
-    c.style.left = `${p.x*100}%`
-    c.style.top = `${p.y*100}%`
-})*/
 
-function position(n) {
-    let angle = toRadians(45/2 + n*angleOffset);
-    let x = 0.5 - Math.cos(angle)/2;
-    let y = 0.5 - Math.sin(angle)/2;
-    return {x: x, y: y}
-}
 
-function toRadians(angle) {
-    return angle * (Math.PI/180);
-}
-
-function SkillCard(skill) {
-    var div = document.createElement('div');
-    div.className = "ps-abs flex-column skill-el"
-    div.innerHTML = `
-    <div class="elemento-circular popup-target">
-    <img src="${skill.img}" alt="${skill.alt}" class="icono">
+function createCard(data, container) {
+    
+    fetch(data.img).then(response => response.text()).then(img => {
+        container.innerHTML += `<div class="card-wrapper">
+    <div class="card">
+        <div class="icon">
+            ${img}
+        </div>
+        <h3 class="card-title ln-txt-center">${data.name}</h3>
+        <p class="card-desc">${data.description}</p>
     </div>
-    <div class="bg-darker p-2 popup right">
-    <h4>${skill.name}</h4>
-    ${skill.desc}</div>
-    `
-    return div;
+</div>`;
+    })
 }
 
+function createSlide(data) {
+    return `<div class="slider-pane ln-p-5">
+    <a href="${data.url}">
+        <h3 class="item-title ln-mb-4">${data.name}</h3>
+    </a>
+    <p class="item-desc">${data.description}</p>
+    </div>`;
+}
 
+function copyToClipboard(el) {
+    let value = el.getAttribute('data-copy')
+    navigator.clipboard.writeText(value);
+    el.setAttribute("data-msg","Copiado: " + value);
+    el.classList.toggle("show", true);
+    setTimeout(() => {
+        el.classList.toggle("show", false)
+    }, 3000);
+}
 
+document.querySelectorAll("[data-copy]").forEach(el => {
+    el.addEventListener('click', () => {
+        copyToClipboard(el);
+    })
+})
